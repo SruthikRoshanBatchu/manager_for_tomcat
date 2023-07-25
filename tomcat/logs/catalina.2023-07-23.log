@@ -1,0 +1,46 @@
+23-Jul-2023 05:52:24.674 INFO [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+23-Jul-2023 05:52:24.695 INFO [Thread-2] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+23-Jul-2023 05:52:24.812 INFO [Thread-2] hudson.lifecycle.Lifecycle.onStatusUpdate Stopping Jenkins
+23-Jul-2023 05:52:24.897 INFO [Thread-2] jenkins.model.Jenkins$16.onAttained Started termination
+23-Jul-2023 05:52:24.974 INFO [Thread-2] hudson.plugins.build_timeout.global.Lifecycle.shutdown Shutdown complete - Global TimeOut ScheduledExecutorService had 0 tasks pending
+23-Jul-2023 05:52:24.976 INFO [Thread-2] jenkins.model.Jenkins$16.onAttained Completed termination
+23-Jul-2023 05:52:24.977 INFO [Thread-2] jenkins.model.Jenkins._cleanUpDisconnectComputers Starting node disconnection
+23-Jul-2023 05:52:24.993 INFO [Thread-2] jenkins.model.Jenkins._cleanUpShutdownPluginManager Stopping plugin manager
+23-Jul-2023 05:52:24.996 INFO [Thread-2] jenkins.model.Jenkins._cleanUpPersistQueue Persisting build queue
+23-Jul-2023 05:52:24.999 INFO [Thread-2] jenkins.model.Jenkins._cleanUpAwaitDisconnects Waiting for node disconnection completion
+23-Jul-2023 05:52:24.999 INFO [Thread-2] hudson.lifecycle.Lifecycle.onStatusUpdate Jenkins stopped
+23-Jul-2023 05:52:25.001 WARNING [Thread-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [jenkins] appears to have started a thread named [Computer.threadPoolForRemoting [#1]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.19/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.19/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.19/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.19/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.19/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.19/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.19/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.19/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.19/java.lang.Thread.run(Thread.java:829)
+23-Jul-2023 05:52:25.002 WARNING [Thread-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [jenkins] appears to have started a thread named [Computer.threadPoolForRemoting [#2]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.19/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.19/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.19/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.19/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.19/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.19/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.19/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.19/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.19/java.lang.Thread.run(Thread.java:829)
+23-Jul-2023 05:52:25.002 WARNING [Thread-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [jenkins] appears to have started a thread named [Timeout.interruptions [#1]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.19/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.19/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.19/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.19/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.19/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.19/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.19/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.19/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.19/java.lang.Thread.run(Thread.java:829)
+23-Jul-2023 05:52:25.004 SEVERE [Thread-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [jenkins] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6089154]) and a value of type [org.springframework.security.core.context.ThreadLocalSecurityContextHolderStrategy$$Lambda$165/0x000000084029ec40] (value [org.springframework.security.core.context.ThreadLocalSecurityContextHolderStrategy$$Lambda$165/0x000000084029ec40@367fbf01]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+23-Jul-2023 05:52:25.006 SEVERE [Thread-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [jenkins] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6089154]) and a value of type [org.springframework.security.core.context.ThreadLocalSecurityContextHolderStrategy$$Lambda$165/0x000000084029ec40] (value [org.springframework.security.core.context.ThreadLocalSecurityContextHolderStrategy$$Lambda$165/0x000000084029ec40@15847315]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+23-Jul-2023 05:52:25.006 SEVERE [Thread-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [jenkins] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6089154]) and a value of type [org.springframework.security.core.context.ThreadLocalSecurityContextHolderStrategy$$Lambda$165/0x000000084029ec40] (value [org.springframework.security.core.context.ThreadLocalSecurityContextHolderStrategy$$Lambda$165/0x000000084029ec40@6c7aa78d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+23-Jul-2023 05:52:25.041 INFO [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+23-Jul-2023 05:52:25.047 INFO [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
