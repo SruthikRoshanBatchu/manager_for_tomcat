@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello, I am under water. Please help me. Huhuhu</h2>
+<h2>Hello, Deployed using deploy to container plugin</h2>
 </body>
 </html>
